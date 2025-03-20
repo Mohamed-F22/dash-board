@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+:root {
+  --main-color: #1b86b9;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* start Navbar */
+.bg-body-tertiary {
+  box-shadow: 0 2px 10px 0 #ccc;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: var(--main-color) !important;
+}
+/* end Navbar */
+/* start sidebar */
+.sidebar {
+  background-color: #38699a;
+  height: calc(100vh - 56px);
+  position: relative;
+}
+.sidebar li.main {
+  padding: 10px 5px;
+  color: white;
+  cursor: pointer;
+}
+.sidebar li a {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar .second {
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+  padding: 5px 0px;
+  margin-left: 20px;
+}
+.sidebar .second::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: 0.3s;
+}
+.sidebar .second:hover::before {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sidebar .secondary-list {
+  display: none;
+}
+.sidebar .secondary-list.active {
+  display: block;
+}
+.sidebar .sitting-toggle {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: -25px;
+  padding: 5px 10px;
+  background-color: #38699a;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.sidebar-column.active {
+  left: 0;
+}
+@media (max-width: 768px) {
+  .sidebar-column {
+    position: absolute;
+    left: -50%;
+    padding: 0 !important;
+    z-index: 1000;
+    transition: 0.4s;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar .sitting-toggle {
+    display: block;
+  }
+}
+/* end sidebar */
+/* start home */
+.home div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home div button {
+  width: 100%;
+}
+.home div button a {
+  text-decoration: none;
+}
+/* end home */
+/* start courses */
+.courses button:not(:last-child) {
+  margin-right: 5px;
+}
+.courses table tr td:last-child span {
+  display: none;
+}
+.courses button a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 992px) {
+  .courses table {
+    font-size: 12px;
+  }
+  .courses button {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .courses table .time {
+    width: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .courses table {
+    font-size: 12px;
+  }
+}
+.courses table tr td:last-child ul {
+  display: none;
+}
+@media (max-width: 576px) {
+  .courses table .time {
+    width: 16%;
+  }
+  .courses table tr td:last-child button {
+    display: none;
+  }
+  .courses table tr td.options {
+    position: relative;
+  }
+  .courses table tr td:last-child ul {
+    display: none;
+  }
+  .courses table tr td:last-child ul.active {
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 26px;
+    list-style: none;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    border-radius: 6px 0px 6px 6px;
+    background-color: #ccc;
+    z-index: 100;
+  }
+  .courses table tr td:last-child ul.active li {
+    padding: 3px;
+  }
+  .courses table tr td:last-child ul.active li a {
+    text-decoration: none;
+    color: black;
+  }
+  .courses table tr td:last-child ul.active li:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+  .courses table tr td:last-child span {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .courses table tr th:last-child span {
+    display: none;
+  }
+}
+/* end courses */
+/* form */
+.addForm,
+.edit {
+  width: 600px;
+}
+@media (max-width: 768px) {
+  .addForm,
+  .edit {
+    width: 100%;
   }
 }

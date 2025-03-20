@@ -1,0 +1,45 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Premiere",
+      "instructor": "Gamal",
+      "description": "Master video editing with Adobe Premiere Pro! Learn cutting, transitions, color correction, audio editing, and effects to create professional-quality videos. Perfect for beginners and aspiring editors. Start editing like a pro today!",
+      "category": "Video editing",
+      "time": 90
+    },
+    {
+      "id": "2d2b",
+      "title": "OOP",
+      "category": "Programming",
+      "description": "Master Object-Oriented Programming (OOP) principles, including encapsulation, inheritance, polymorphism, and abstraction. Learn to design scalable and reusable code with real-world applications.",
+      "instructor": "Doha Alaa",
+      "time": "330"
+    },
+    {
+      "id": "84f1",
+      "title": "Data scince",
+      "category": "Programming",
+      "description": "Learn Python, data analysis, machine learning, and visualization to turn raw data into powerful insights. Master tools like Pandas, NumPy, Matplotlib, and Scikit-Learn. Perfect for beginners and professionals looking to upskill. Start your data journey today!",
+      "instructor": "Osama Mohamed",
+      "time": "260"
+    },
+    {
+      "id": "694f",
+      "title": "Adobe Photoshop",
+      "category": "Photoshop",
+      "description": "Unlock your creativity with our Adobe Photoshop Course, designed for beginners and experienced users alike. This course covers everything from fundamental tools and techniques to advanced photo manipulation, digital painting, and graphic design. You'll learn how to edit images professionally, create stunning visual effects, and design eye-catching graphics. By the end of the course, you'll have the skills to work on real-world projects, whether for personal, freelance, or professional use.",
+      "instructor": "Alaa Zahran",
+      "time": "150"
+    },
+    {
+      "id": "1293",
+      "title": "English",
+      "category": "Language",
+      "description": "Learning English opens doors to countless opportunities in education, career growth, and global communication. As the most widely spoken language in the world, English serves as a bridge between cultures and industries, making it essential for success in fields like business, technology, and academia. It provides access to a vast amount of knowledge, from books and research papers to online courses and international conferences. Additionally, strong English skills enhance travel experiences and social interactions, allowing individuals to connect with people from different backgrounds. In today’s interconnected world, mastering English is not just an advantage—it’s a necessity.",
+      "instractor": "Moustafa",
+      "time": "810",
+      "instructor": "Moustafa"
+    }
+  ]
+}
