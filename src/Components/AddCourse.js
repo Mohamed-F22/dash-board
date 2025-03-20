@@ -11,6 +11,7 @@ function AddCourse () {
     let [instractor, setInstructor] = useState("");
     let [time, setTime] = useState(0);
     let endPoint = "http://localhost:9000/courses";
+    // let endPoint = "https://my-json-server.typicode.com/Mohamed-F22/DB/courses";
 
     // Using useNavigate for going to courses page on submit
     let navigate = useNavigate();

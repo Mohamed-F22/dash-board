@@ -3,7 +3,8 @@ import { Row, Container, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 function Details () {
-    let endPoint = "http://localhost:9000/courses"
+    let endPoint = "http://localhost:9000/courses";
+    // let endPoint = "https://my-json-server.typicode.com/Mohamed-F22/DB/courses";
     let param = useParams()
     let [course, setCourse] = useState([])
 

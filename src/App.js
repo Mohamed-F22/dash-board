@@ -20,7 +20,7 @@ function App() {
         </Col>
         <Col xs={12} md={9} lg={10} className="pe-0">
           <Routes>
-            <Route path='/' element={<Home/>} />
+            <Route path='/dash-board' element={<Home/>} />
             <Route path='/courses' element={<Courses/>} />
             <Route path='/add-course' element={<AddCourse/>} />
             <Route path='/courses/:courseId' element={<Details/>} />

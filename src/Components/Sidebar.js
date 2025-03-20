@@ -6,14 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Sidebar () {
     let [cats , setCats] = useState([])
-    let endPoint = "http://localhost:9000/courses"
+    let endPoint = "http://localhost:9000/courses";
+    // let endPoint = "https://my-json-server.typicode.com/Mohamed-F22/DB/courses";
 
     useEffect (() => {
         fetch(endPoint)
         .then(res => res.json())
         .then(data => {
             // getting categories from data without repetition
-            let catArray = [...new Set(data.map(course => course.category))]; // استخراج الفئات
+            let catArray = [...new Set(data.map(course => course.category))];
             setCats(catArray);
         })
     },[])

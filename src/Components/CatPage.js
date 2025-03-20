@@ -8,7 +8,8 @@ import Swal from "sweetalert2"
 
 function Category () {
     let [courses, setCourses] = useState([])
-    let endPoint = "http://localhost:9000/courses"
+    let endPoint = "http://localhost:9000/courses";
+    // let endPoint = "https://my-json-server.typicode.com/Mohamed-F22/DB/courses";
     let param = useParams()
 
     // useEffect runs on first load and when param changes

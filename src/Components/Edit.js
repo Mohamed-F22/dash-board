@@ -4,6 +4,7 @@ import { Container, Form, Button } from "react-bootstrap";
 
 function EditCourse() {
     let endPoint = "http://localhost:9000/courses";
+    // let endPoint = "https://my-json-server.typicode.com/Mohamed-F22/DB/courses";
     let { courseId } = useParams();
     let navigate = useNavigate();
     let [course, setCourse] = useState({ title: "", category: "", instructor: "", time: 0, description: "" });
